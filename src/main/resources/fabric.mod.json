@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "pvpcrosshair",
+  "version": "${version}",
+  "name": "PvP Crosshair Mod",
+  "description": "Customizable crosshair with RGB colors. Press R to open settings.",
+  "authors": ["PvP Player"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.pvpcrosshair.PvPCrosshairClient"]
+  },
+  "mixins": ["pvpcrosshair.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
